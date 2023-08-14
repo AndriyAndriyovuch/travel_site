@@ -9,11 +9,16 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/cba15fe931.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main>
+      <%= image_tag("background-mountains", id: "background-main") %>
+
+      <%= render "layouts/header" %>
       <%= yield %>
+      <%= render "layouts/footer" %>
     </main>
   </body>
 </html>

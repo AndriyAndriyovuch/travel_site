@@ -1,0 +1,91 @@
+<footer class="bg-black text-white">
+  <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center">
+      <h1 class="text-2xl font-bold">QWERy</h1>
+
+      <div class="flex items-baseline">
+        <p class="mb-2 mr-5">Ready to explore?</p>
+        <%= button_to "Get Started", root_path, class: "btn-orange" %>
+      </div>
+    </div>
+
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+
+    <div class="flex justify-between items-center mr-5">
+      <div>
+        <p class="max-w-xs text-xl font-semibold">
+          Let's go on vacation,
+        </p>
+        <p class="max-w-xs text-xl font-semibold">
+          Make your day
+        </p>
+
+        <div class="flex mt-8 space-x-6 text-gray-600">
+          <%= form_with url: "/send_mail", method: :get do |form| %>
+            <%= form.text_field :query, placeholder: "Email address", id: "contact-input", class: "bg-transparent" %>
+            <%= form.submit ">", id: "contact-submit" %>
+          <% end %>
+        </div>
+      </div>
+
+      <div>
+        <p class="font-medium orange-text font-semibold">
+          Services
+        </p>
+        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
+          <%= link_to "Email marketing", root_path %>
+          <%= link_to "Campaigns", root_path %>
+          <%= link_to "Branding", root_path %>
+          <%= link_to "Offline", root_path %>
+        </nav>
+      </div>
+
+      <div>
+        <p class="font-medium orange-text font-semibold">
+          About
+        </p>
+        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
+          <%= link_to "Our Story", root_path %>
+          <%= link_to "Benefits", root_path %>
+          <%= link_to "Team", root_path %>
+          <%= link_to "Careers", root_path %>
+        </nav>
+      </div>
+
+      <div>
+        <p class="font-medium orange-text font-semibold">
+          Help
+        </p>
+        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
+          <%= link_to "FAQs", root_path %>
+          <%= link_to "Contact Us", root_path %>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="flex justify-between items-center mt-12">
+      <div>
+        <%= link_to "Terms & Conditions", root_path, class: "mx-5 text-xs" %>
+        <%= link_to "Privacy Policy", root_path, class: "mx-5 text-xs" %>
+      </div>
+
+      <div class="flex items-baseline">
+        <%= button_to "https://www.facebook.com/" , class: "text-white mx-3" do %>
+          <i class="fa-brands fa-facebook-f"></i>
+        <% end %>
+
+        <%= button_to "https://twitter.com/" , class: "text-white mx-3" do %>
+          <i class="fa-brands fa-twitter"></i>
+        <% end %>
+
+        <%= button_to "https://www.instagram.com/" , class: "text-white mx-3" do %>
+          <i class="fa-brands fa-instagram"></i>
+        <% end %>
+      </div>
+    </div>
+    <p class="mt-8 text-xs font-semibold text-gray-500 text-center">
+      Copyright <%= Date.current.year %> QWERy
+    </p>
+  </div>
+</footer>
