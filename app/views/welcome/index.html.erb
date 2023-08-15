@@ -14,36 +14,66 @@
     </div>
   </div>
 
-  <div class="block">
+  <div class="block my-5">
     <div class="flex justify-center">
       <div class="flex justify-between w-3/5">
 
-        <%= image_tag("articles/article1", class: "article-preview") %>
+        <%= image_tag("articles/article1", class: "article-preview w-2/5") %>
 
-        <div class="block">
+        <div class="block w-2/5">
           <div class="flex items-center">
             <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
-            <p class="custom-orange uppercase text-sm font-bold tracking-widest">Explore the nature beauty</p>
+            <p class="custom-orange uppercase text-sm font-bold tracking-widest">East Nusa Tenggara</p>
           </div>
-          <p>Have you enjoyed your holiday?</p>
-          <p>You will be amazed if you take part in this sailing Komodo island tour package. So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism.  The beautiful waters of Komodo will make you meet many travelers from other countries.</p>
+
+          <p class="text-6xl font-bold mb-5">Have you enjoyed your holiday?</p>
+          <p class="mb-5">You will be amazed if you take part in this sailing Komodo island tour package. So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism.  The beautiful waters of Komodo will make you meet many travelers from other countries.</p>
+
+          <p class="inline mt-5 custom-orange">read more</p>
+          <i class="fa-solid fa-arrow-right custom-orange"></i>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="block">
-    <swiper-container navigation="true" pagination="true" scrollbar="true" effect="coverflow">
-      <swiper-slide>
-        <div class="h-64 grid place-items-center bg-stone-50 green">Slide 1</div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="h-64 grid place-items-center bg-stone-50 pink">Slide 2</div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="h-64 grid place-items-center bg-stone-50 blue">Slide 3</div>
-      </swiper-slide>
-    </swiper-container>
+  <div class="block my-5">
+    <div class='flex justify-center'>
+      <div class="block w-3/5">
+        <swiper-container navigation="true" pagination="true" scrollbar="true" effect="coverflow">
+          <swiper-slide>
+            <div class="h-64 grid place-items-center bg-stone-50 green">Slide 1</div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="h-64 grid place-items-center bg-stone-50 pink">Slide 2</div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="h-64 grid place-items-center bg-stone-50 blue">Slide 3</div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+  </div>
+
+    <div class="block my-5">
+    <div class="flex justify-center">
+      <div class="flex justify-between w-3/5">
+
+        <div class="block w-2/5">
+          <div class="flex items-center">
+            <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
+            <p class="custom-orange uppercase text-sm font-bold tracking-widest">Indonesian culture</p>
+          </div>
+
+          <p class="text-6xl font-bold mb-5">Our culture here is very friendly to people</p>
+          <p class="mb-5">known for his politeness, manners and gentleness. This becomes a characteristic when they mingle with other tribes and become basic traits that are passed down by their ancestors.</p>
+
+          <p class="inline mt-5 custom-orange">read more</p>
+          <i class="fa-solid fa-arrow-right custom-orange"></i>
+        </div>
+
+        <%= image_tag("articles/article3", class: "article-preview w-2/5") %>
+      </div>
+    </div>
   </div>
 
 
