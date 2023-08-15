@@ -15,14 +15,8 @@
   justify-content: center;
 }
 
-.pink {
-  background-color: lightpink;
-}
-
-.green {
-  background-color: lightgreen;
-}
-
-.blue {
-  background-color: lightblue;
+.div.block.swiper-slide {
+  height: 300px!important;
+  width: 100%;
+  object-fit: cover;
 }
