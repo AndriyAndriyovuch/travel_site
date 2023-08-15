@@ -23,11 +23,11 @@
         <div class="block w-2/5">
           <div class="flex items-center">
             <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
-            <p class="custom-orange uppercase text-sm font-bold tracking-widest">East Nusa Tenggara</p>
+            <p class="custom-orange uppercase text-sm font-bold tracking-widest"><%= @articles.first.category.title %></p>
           </div>
 
-          <p class="text-6xl font-bold mb-5">Have you enjoyed your holiday?</p>
-          <p class="mb-5">You will be amazed if you take part in this sailing Komodo island tour package. So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism.  The beautiful waters of Komodo will make you meet many travelers from other countries.</p>
+          <p class="text-6xl font-bold mb-5"><%= @articles.first.title %></p>
+          <p class="mb-5"><%= @articles.first.body %></p>
 
           <p class="inline mt-5 custom-orange">read more</p>
           <i class="fa-solid fa-arrow-right custom-orange"></i>
@@ -61,17 +61,17 @@
         <div class="block w-2/5">
           <div class="flex items-center">
             <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
-            <p class="custom-orange uppercase text-sm font-bold tracking-widest">Indonesian culture</p>
+            <p class="custom-orange uppercase text-sm font-bold tracking-widest"><%= @articles.last.category.title %></p>
           </div>
 
-          <p class="text-6xl font-bold mb-5">Our culture here is very friendly to people</p>
-          <p class="mb-5">known for his politeness, manners and gentleness. This becomes a characteristic when they mingle with other tribes and become basic traits that are passed down by their ancestors.</p>
+          <p class="text-6xl font-bold mb-5"><%= @articles.last.title %></p>
+          <p class="mb-5"><%= @articles.last.body %></p>
 
           <p class="inline mt-5 custom-orange">read more</p>
           <i class="fa-solid fa-arrow-right custom-orange"></i>
         </div>
 
-        <%= image_tag("articles/article3", class: "article-preview w-2/5") %>
+        <%= image_tag @articles.last.preview_img, class: "article-preview w-2/5" %>
       </div>
     </div>
   </div>

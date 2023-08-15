@@ -5,8 +5,12 @@
 @import "layouts/footer.css";
 @import "pages/index.css";
 
-* {
+p, a {
   color:white
+}
+
+option, select {
+  color:black
 }
 
 main {
