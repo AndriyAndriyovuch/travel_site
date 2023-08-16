@@ -3,8 +3,8 @@
 }
 
 .article-preview {
-  height: 720px;
-  width: 598px;
+  height: 480px;
+  width: 340px;
   object-fit: cover;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .slide-img {
-  height: 800px; 
+  height: 700px; 
   width: 100%; 
   object-fit: cover;
 }

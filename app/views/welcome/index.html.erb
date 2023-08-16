@@ -16,9 +16,6 @@
           <i class="fa-brands fa-facebook-f -rotate-90"></i>
         <% end %>
 
-
-
-
       </div>
     <div class="w-2/5">
       <div class="flex items-center">
@@ -35,17 +32,17 @@
 
   <div class="block my-5">
     <div class="flex justify-center">
-      <div class="flex justify-between w-3/5">
+      <div class="flex justify-between items-center w-3/5">
 
         <%= image_tag @articles.first.preview_img, class: "article-preview w-2/5" %>
 
-        <div class="block w-2/5">
+        <div class="block w-1/2">
           <div class="flex items-center">
             <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
             <p class="custom-orange uppercase text-sm font-bold tracking-widest"><%= @articles.first.category.title %></p>
           </div>
 
-          <p class="text-6xl font-bold mb-5"><%= @articles.first.title %></p>
+          <p class="text-5xl font-bold mb-5"><%= @articles.first.title %></p>
           <p class="mb-5"><%= @articles.first.body %></p>
 
           <p class="inline mt-5 custom-orange">read more</p>
@@ -88,15 +85,15 @@
 
     <div class="block my-5">
     <div class="flex justify-center">
-      <div class="flex justify-between w-3/5">
+      <div class="flex justify-between items-center w-3/5">
 
-        <div class="block w-2/5">
+        <div class="block w-1/2">
           <div class="flex items-center">
             <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
             <p class="custom-orange uppercase text-sm font-bold tracking-widest"><%= @articles.last.category.title %></p>
           </div>
 
-          <p class="text-6xl font-bold mb-5"><%= @articles.last.title %></p>
+          <p class="text-5xl font-bold mb-5"><%= @articles.last.title %></p>
           <p class="mb-5"><%= @articles.last.body %></p>
 
           <p class="inline mt-5 custom-orange">read more</p>
