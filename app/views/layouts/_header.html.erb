@@ -9,7 +9,11 @@
     </nav>
 
     <div class="items-center h-full">
-      <%= link_to "Search", "javascript:void(0)", class: "mr-5 font-medium" %>
+    
+      <%= link_to "javascript:void(0)", class: "mr-5 font-medium " do %>
+        <i class="fa fa-thin fa-magnifying-glass inline mr-2"></i>
+        <p class="mr-5 font-medium inline ">Search</p>
+       <% end %>
     </div>
   </div>
 </header>
