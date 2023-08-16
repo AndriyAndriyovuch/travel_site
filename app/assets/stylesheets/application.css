@@ -34,3 +34,9 @@ body {
 .custom-orange-dash {
   background-color: #FFC178;
 }
+
+:root {
+  --swiper-navigation-color: #FFC178 ;
+  --swiper-pagination-color: white;
+  }
+

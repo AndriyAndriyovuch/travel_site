@@ -5,7 +5,11 @@
 }
 
 #contact-submit {
-  margin: -5px;
+  background-image: url("icons/chevron-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: -16px;
+  margin-left: -5px;
   background-color: #FFA343;
   height: 100%;
   width: 40px;
@@ -23,4 +27,9 @@
 
 .orange-text {
   color: #FFD1A0;
+}
+
+#chevron-right {
+  position: absolute;
+  margin: 14px;
 }

@@ -5,13 +5,13 @@
 
       <div class="flex items-baseline">
         <p class="mb-2 mr-5">Ready to explore?</p>
-        <%= button_to "Get Started", root_path, class: "btn-orange" %>
+        <%= link_to "Get Started", "javascript:void(0)", class: "btn-orange" %>
       </div>
     </div>
 
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 
-    <div class="flex justify-between items-center mr-5">
+    <div class="flex justify-between mr-5">
       <div>
         <p class="max-w-xs text-xl font-semibold">
           Let's go on vacation,
@@ -23,7 +23,8 @@
         <div class="flex mt-8 space-x-6 text-gray-600">
           <%= form_with url: "/send_mail", method: :get do |form| %>
             <%= form.text_field :query, placeholder: "Email address", id: "contact-input", class: "bg-transparent" %>
-            <%= form.submit ">", id: "contact-submit" %>
+
+            <%= form.submit "", id: "contact-submit" %>
           <% end %>
         </div>
       </div>
@@ -33,10 +34,10 @@
           Services
         </p>
         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-          <%= link_to "Email marketing", root_path %>
-          <%= link_to "Campaigns", root_path %>
-          <%= link_to "Branding", root_path %>
-          <%= link_to "Offline", root_path %>
+          <%= link_to "Email marketing", "javascript:void(0)" %>
+          <%= link_to "Campaigns", "javascript:void(0)" %>
+          <%= link_to "Branding", "javascript:void(0)" %>
+          <%= link_to "Offline", "javascript:void(0)" %>
         </nav>
       </div>
 
@@ -45,10 +46,10 @@
           About
         </p>
         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-          <%= link_to "Our Story", root_path %>
-          <%= link_to "Benefits", root_path %>
-          <%= link_to "Team", root_path %>
-          <%= link_to "Careers", root_path %>
+          <%= link_to "Our Story", "javascript:void(0)" %>
+          <%= link_to "Benefits", "javascript:void(0)" %>
+          <%= link_to "Team", "javascript:void(0)" %>
+          <%= link_to "Careers", "javascript:void(0)" %>
         </nav>
       </div>
 
@@ -57,8 +58,8 @@
           Help
         </p>
         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-          <%= link_to "FAQs", root_path %>
-          <%= link_to "Contact Us", root_path %>
+          <%= link_to "FAQs", "javascript:void(0)" %>
+          <%= link_to "Contact Us", "javascript:void(0)" %>
         </nav>
       </div>
 
@@ -66,8 +67,8 @@
 
     <div class="flex justify-between items-center mt-12">
       <div>
-        <%= link_to "Terms & Conditions", root_path, class: "mx-5 text-xs" %>
-        <%= link_to "Privacy Policy", root_path, class: "mx-5 text-xs" %>
+        <%= link_to "Terms & Conditions", "javascript:void(0)", class: "mx-5 text-xs" %>
+        <%= link_to "Privacy Policy", "javascript:void(0)", class: "mx-5 text-xs" %>
       </div>
 
       <div class="flex items-baseline">

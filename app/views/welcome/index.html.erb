@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="flex justify-center mt-5 pt-5 items-center" id="scrolling-hint">
+    <div class="flex justify-center mt-5 pt-5 items-end" id="scrolling-hint">
       <p class="mr-3 mt-5 pt-5">Scroll Down<p>
       <i class="fa fa-light fa-arrow-down mt-5 pt-5"></i>
     </div>
@@ -53,7 +53,7 @@
           <p class="text-5xl font-bold mb-5"><%= @articles.first.title %></p>
           <p class="mb-5"><%= @articles.first.body %></p>
 
-          <p class="inline mt-5 custom-orange">read more</p>
+          <%= link_to "read more", "javascript:void(0)", class: "inline mt-5 custom-orange" %>
           <i class="fa-solid fa-arrow-right custom-orange"></i>
         </div>
       </div>
@@ -79,7 +79,7 @@
                 <p class="mb-5"><%= article.body %></p>
 
                 <div class="inline">
-                  <p class="inline-flex mt-5 mr-2 custom-orange">read more</p>
+                  <%= link_to "read more", "javascript:void(0)", class: "inline mt-5 custom-orange" %>
                   <i class="inline-flex fa-solid fa-arrow-right custom-orange"></i>
                 </div>
 
@@ -104,7 +104,7 @@
           <p class="text-5xl font-bold mb-5"><%= @articles.last.title %></p>
           <p class="mb-5"><%= @articles.last.body %></p>
 
-          <p class="inline mt-5 custom-orange">read more</p>
+          <%= link_to "read more", "javascript:void(0)", class: "inline mt-5 custom-orange" %>
           <i class="fa-solid fa-arrow-right custom-orange"></i>
         </div>
 
