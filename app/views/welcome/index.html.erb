@@ -1,6 +1,25 @@
 
 <div class="block">
   <div class="flex justify-center" id="start-page">
+      <div class="flex rotate-90 social-links">
+        <p class="mx-3">Follow us</p>
+
+        <%= button_to "https://www.instagram.com/", class: "mx-3" do %>
+          <i class="fa-brands fa-instagram -rotate-90"></i>
+        <% end %>
+
+        <%= button_to "https://twitter.com/" , class: "mx-3" do %>
+          <i class="fa-brands fa-twitter -rotate-90"></i>
+        <% end %>
+
+        <%= button_to "https://www.facebook.com/" , class: "mx-3" do %>
+          <i class="fa-brands fa-facebook-f -rotate-90"></i>
+        <% end %>
+
+
+
+
+      </div>
     <div class="w-2/5">
       <div class="flex items-center">
         <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
@@ -18,7 +37,7 @@
     <div class="flex justify-center">
       <div class="flex justify-between w-3/5">
 
-        <%= image_tag("articles/article1", class: "article-preview w-2/5") %>
+        <%= image_tag @articles.first.preview_img, class: "article-preview w-2/5" %>
 
         <div class="block w-2/5">
           <div class="flex items-center">

@@ -30,3 +30,9 @@
   text-align: center;
   align-items: center;
 }
+
+.social-links {
+  position: absolute;
+  left: 0px;
+  top: 250px;
+}
