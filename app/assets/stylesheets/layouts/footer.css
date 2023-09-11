@@ -1,0 +1,35 @@
+#contact-input {
+  border: none;
+  border-bottom: solid 1px;
+  width: 80%;
+}
+
+#contact-submit {
+  background-image: url("icons/chevron-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: -16px;
+  margin-left: -5px;
+  background-color: #FFA343;
+  height: 100%;
+  width: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn-orange {
+  background-color: #FFA343;
+  border-radius: 5px;
+  padding: 15px 50px;
+  color: black;
+  font-weight: bold;
+}
+
+.orange-text {
+  color: #FFD1A0;
+}
+
+#chevron-right {
+  position: absolute;
+  margin: 14px;
+}

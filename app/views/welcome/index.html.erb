@@ -1,0 +1,122 @@
+
+<div class="block">
+  <div class="flex justify-center"  id="start-page">
+      <div class="flex rotate-90 social-links">
+        <p class="mx-3">Follow us</p>
+
+        <%= button_to "https://www.instagram.com/", class: "mx-3" do %>
+          <i class="fa-brands fa-instagram -rotate-90"></i>
+        <% end %>
+
+        <%= button_to "https://twitter.com/" , class: "mx-3" do %>
+          <i class="fa-brands fa-twitter -rotate-90"></i>
+        <% end %>
+
+        <%= button_to "https://www.facebook.com/" , class: "mx-3" do %>
+          <i class="fa-brands fa-facebook-f -rotate-90"></i>
+        <% end %>
+
+      </div>
+    <div class="w-2/5">
+      <div class="flex items-center">
+        <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
+        <p class="custom-orange uppercase text-sm font-bold tracking-widest">Explore the nature beauty</p>
+      </div>
+
+      <div class="mb-5">
+        <p class="text-6xl font-bold mb-2">Discover</p>
+        <p class="text-5xl">Wonderful Indonesia</p>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-5 pt-5 items-end" id="scrolling-hint">
+      <p class="mr-3 mt-5 pt-5">Scroll Down<p>
+      <i class="fa fa-light fa-arrow-down mt-5 pt-5"></i>
+    </div>
+
+  </div>
+
+
+
+  <div class="block my-5">
+    <div class="flex justify-center">
+      <div class="flex justify-between items-center w-3/4">
+
+        <%= image_tag @articles.first.preview_img, class: "article-preview w-2/5" %>
+
+        <div class="block w-1/2">
+          <div class="flex items-center">
+            <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
+            <p class="custom-orange uppercase text-sm font-bold tracking-widest"><%= @articles.first.category.title %></p>
+          </div>
+
+          <p class="text-5xl font-bold mb-5"><%= @articles.first.title %></p>
+          <p class="mb-5"><%= @articles.first.body %></p>
+
+          <%= link_to "read more", "javascript:void(0)", class: "inline mt-5 custom-orange" %>
+          <i class="fa-solid fa-arrow-right custom-orange"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block my-5">
+    <div class='flex justify-center'>
+      <div class="block w-3/4">
+        <swiper-container navigation="true" pagination="true" scrollbar="true" effect="coverflow">
+          <% @articles.each do |article| %>
+            <swiper-slide>
+              <%= image_tag article.preview_img, class: "slide-img" %>
+
+              <div class=" flex article-slide-info">
+                <div class="flex align-baseline">
+                  <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
+                  <p class="flex items-center custom-orange uppercase text-sm font-bold tracking-widest"><%= article.category.title %></p>
+                  <hr class="w-16 h-1 my-8 ml-5 border-0 rounded custom-orange-dash">
+                </div>
+
+                <p class="text-6xl font-bold mb-5"><%= article.title %></p>
+                <p class="mb-5"><%= article.body %></p>
+
+                <div class="inline">
+                  <%= link_to "read more", "javascript:void(0)", class: "inline mt-5 custom-orange" %>
+                  <i class="inline-flex fa-solid fa-arrow-right custom-orange"></i>
+                </div>
+
+              </div>
+            </swiper-slide>
+          <% end %>
+        </swiper-container>
+      </div>
+    </div>
+  </div>
+
+    <div class="block my-5">
+    <div class="flex justify-center">
+      <div class="flex justify-between items-center w-3/4">
+
+        <div class="block w-1/2">
+          <div class="flex items-center">
+            <hr class="w-16 h-1 my-8 mr-5 border-0 rounded custom-orange-dash">
+            <p class="custom-orange uppercase text-sm font-bold tracking-widest"><%= @articles.last.category.title %></p>
+          </div>
+
+          <p class="text-5xl font-bold mb-5"><%= @articles.last.title %></p>
+          <p class="mb-5"><%= @articles.last.body %></p>
+
+          <%= link_to "read more", "javascript:void(0)", class: "inline mt-5 custom-orange" %>
+          <i class="fa-solid fa-arrow-right custom-orange"></i>
+        </div>
+
+        <%= image_tag @articles.last.preview_img, class: "article-preview w-2/5" %>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>

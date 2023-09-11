@@ -13,6 +13,7 @@ gem "stimulus-rails"
 gem "tailwindcss-rails"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
+gem "foreman"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -27,3 +28,9 @@ group :development do
   gem "web-console"
 end
 
+
+gem "dockerfile-rails", ">= 1.5", :group => :development
+
+gem "sentry-ruby", "~> 5.10"
+
+gem "sentry-rails", "~> 5.10"

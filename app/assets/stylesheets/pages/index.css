@@ -1,0 +1,46 @@
+#start-page {
+  min-height: 95vh;
+  height: 95vh;
+}
+
+.article-preview {
+  height: 480px;
+  width: 340px;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  height: 250px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.slide-img {
+  height: 700px; 
+  width: 100%; 
+  object-fit: cover;
+}
+
+.article-slide-info {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  text-align: center;
+  align-items: center;
+}
+
+.social-links {
+  position: absolute;
+  left: 0px;
+  top: 250px;
+}
+
+#scrolling-hint {
+  position: fixed;
+  top: 300px;
+}
+
+

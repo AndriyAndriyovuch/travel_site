@@ -9,11 +9,22 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/cba15fe931.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <header>
+      <%= render "layouts/header" %>
+    </header>
+
+    <main>
       <%= yield %>
     </main>
+
+    <footer>
+      <%= render "layouts/footer" %>
+    </footer>
   </body>
 </html>
